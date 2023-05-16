@@ -28,10 +28,10 @@ function Carousel({data}) {
   };
 
   return (
-    <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group'>
+    <div className='max-w-[1400px] h-[325px] w-full m-auto py-16 px-4 relative group sm:h-[780px]'>
       <div
         style={{ backgroundImage: `url(${myData[currentIndex]})` }}
-        className='w-full h-full rounded-2xl bg-center bg-auto bg-no-repeat md:bg-cover duration-500'
+        className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
       ></div>
       {/* Left Arrow */}
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2
