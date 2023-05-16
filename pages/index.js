@@ -161,7 +161,7 @@ export default function Home() {
            </div>
            <div className='mt-10'>
             <h4 className='text-2xl text-gray-700'>
-                If you&apos;d like to work together, you can contact of me here at: 
+                If you&apos;d like to work together, you can contact me here at: 
                 <span className='text-cyan-500'><a href="mailto:tiejgriffin@gmail.com" target="_blank" rel="noreferrer"> tiejgriffin@gmail.com</a></span>.
               </h4>
            </div>
