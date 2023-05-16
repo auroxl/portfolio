@@ -5,19 +5,22 @@ import { RxDotFilled } from 'react-icons/rx';
 
 
 function Carousel({data}) {
-  const myData = data;
-  const [currentIndex, setCurrentIndex] = useState('0');
+  const myData = data.map(({image}) => image);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? myData.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
+    console.log(newIndex);
+    
   };
 
   const nextSlide = () => {
     const isLastSlide = currentIndex === myData.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
+    console.log(currentIndex);
   };
 
   const goToSlide = (slideIndex) => {
@@ -27,7 +30,7 @@ function Carousel({data}) {
   return (
     <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group'>
       <div
-        style={{ backgroundImage: `url(${myData[currentIndex].image})` }}
+        style={{ backgroundImage: `url(${myData[currentIndex]})` }}
         className='w-full h-full rounded-2xl bg-center bg-auto bg-no-repeat md:bg-cover duration-500'
       ></div>
       {/* Left Arrow */}
