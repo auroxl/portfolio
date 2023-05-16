@@ -19,10 +19,10 @@ import {
 from "react-icons/di";
 import Image from "next/image";
 import jg from '../public/jg-image.png';
-import Keen from '../public/components/Keen';
-import BookedFinancial from '../public/components/BookedFinancial';
-import Methodical from '../public/components/Methodical';
-import Byers from '../public/components/Byers';
+import Keen from '/components/Keen';
+import BookedFinancial from '/components/BookedFinancial';
+import Methodical from '/components/Methodical';
+import Byers from '/components/Byers';
 
 
 export default function Home() {
